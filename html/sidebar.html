@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+</head>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/gh.css">
+<body>
+  <div class = "container">
+    <aside class="sidebar">
+        <!-- 로고 -->
+        <div class="sidebar-logo">
+          <img src="../images/ic_login_safepocket_logo.png" alt="세이프포켓 로고" />
+        </div>
+        <!-- 네비 -->
+        <nav aria-label="메인 메뉴">
+          <ul class="nav-list">
+            <li>
+              <a class="nav-item" href="#">
+                <img src="../images/hist.svg" alt="계폐이력">
+                <span class="nav-item-label">계폐 이력</span>
+              </a>
+            </li>
+            
+            <li>
+              <a class="nav-item " href="#">
+                <img src="../images/fclt.svg" alt="세이프 포켓">
+                <span class="nav-item-label">세이프 포켓</span>
+              </a>
+            </li>
+            
+            <li>
+              <a class="nav-item " href="#">
+                <img src="../images/user.svg" alt="단말기">
+                <span class="nav-item-label">단말기</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <header class="header_container">
+        <div class="user_container" id = "user_info">
+          <img src="../images/loginUser.svg">
+          <div>사용자</div>
+          <!-- 드롭다운 -->
+          <div class="logout_dropdown" id="logoutDropdown">
+            <button>로그아웃</button>
+          </div>
+        </div> 
+      </header>
+
+  </div>
+</body>
+
+<script>
+    const userInfo = document.getElementById("user_info");
+    const dropdown = document.getElementById("logoutDropdown");
+    userInfo.addEventListener("click", function(e){
+        e.stopPropagation();
+        if(dropdown.style.display === "block"){
+            dropdown.style.display = "none";
+        } else {
+            dropdown.style.display = "block";
+        }
+    });
+    document.addEventListener("click", function(){
+        dropdown.style.display = "none";
+    });
+
+    const navItems = document.querySelectorAll(".nav-item");
+    navItems.forEach(item => {
+        item.addEventListener("click", function(e){
+            e.preventDefault();
+
+            // 기존 active 제거
+            navItems.forEach(nav => {
+                nav.classList.remove("active");
+            });
+
+            // 현재 클릭한 메뉴 active 추가
+            this.classList.add("active");
+        });
+    });
+</script>
+
+</html>
