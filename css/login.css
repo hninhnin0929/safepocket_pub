@@ -1,0 +1,209 @@
+/* @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css'); */
+
+/* =============================================
+   RESET
+============================================= */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* =============================================
+   BODY
+============================================= */
+body {
+    font-family: 'Pretendard';
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00305f;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* =============================================
+   WRAPPER
+============================================= */
+.login_wrapper {
+    width: 100%;
+    max-width: 668px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+/* =============================================
+   LOGO
+============================================= */
+.login_logo {
+    width: 100%;
+    max-width: 506px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_text {
+    font-size: 32px;
+    font-weight: 800;
+    color: #F7F7F7;
+    letter-spacing: 0.08em;
+    opacity: 0.9;
+}
+
+/* =============================================
+   CARD
+============================================= */
+.login_card {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 68px 81px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =============================================
+   INPUT
+============================================= */
+.input_group {
+    position: relative;
+}
+
+.input_group + .input_group {
+    margin-top: 16px;
+}
+
+.input_group input {
+    width: 100%;
+    height: 52px;
+    background: transparent;
+    border: 1px solid rgba(247, 247, 247, 0.78);
+    border-radius: 0;
+    padding: 0 20px 0 56px;
+    padding-block: 0;
+    padding-inline: 20px 20px;
+    padding-left: 56px;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #F7F7F7;
+    outline: none;
+    transition: border-color 0.2s;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.input_group input::placeholder {
+    color: rgba(247, 247, 247, 0.6);
+}
+
+.input_group input:focus {
+    border-color: #F7F7F7;
+}
+
+.input_icon {
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+/* =============================================
+   LOGIN BUTTON
+============================================= */
+.btn_login {
+    width: 100%;
+    height: 52px;
+    background-color: rgba(153, 210, 255, 0.78);
+    border: none;
+    border-radius: 0;
+    margin-top: 54px;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #F7F7F7;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn_login:hover  { background-color: rgba(153, 210, 255, 0.95); }
+.btn_login:active { background-color: rgba(153, 210, 255, 1); }
+
+/* =============================================
+   FORGOT PASSWORD
+============================================= */
+.forgot_password {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 27px;
+}
+
+.forgot_password a {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #F7F7F7;
+    text-decoration: none;
+    opacity: 0.78;
+    transition: opacity 0.2s;
+}
+
+.forgot_password a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* =============================================
+   RESPONSIVE
+============================================= */
+@media (max-width: 768px) {
+    .login_card {
+        padding: 48px 40px 44px;
+    }
+    .btn_login {
+        margin-top: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login_wrapper {
+        padding: 16px;
+        gap: 24px;
+    }
+    .login_card {
+        padding: 32px 24px 32px;
+    }
+    .input_group input {
+        font-size: 14px;
+        height: 48px;
+    }
+    .btn_login {
+        height: 48px;
+        font-size: 14px;
+        margin-top: 28px;
+    }
+    .forgot_password {
+        margin-top: 20px;
+    }
+    .forgot_password a {
+        font-size: 14px;
+    }
+}
