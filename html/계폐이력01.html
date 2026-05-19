@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>세이프포켓 - 계폐이력</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ─── SIDEBAR ─── -->
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <img
+            src="../images/ico_home_safepocket_logo.svg"
+            alt="세이프포켓 로고"
+          />
+        </div>
+        <nav aria-label="메인 메뉴">
+          <ul class="nav-list">
+            <li>
+              <a class="nav-item active" href="#" id="hist_info">
+                <span class="nav-item-icon"
+                  ><img src="../images/histIcon.svg" alt="계폐이력"
+                /></span>
+                <span class="nav-item-label">계폐 이력</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-item" href="#" id="safePocket">
+                <span class="nav-item-icon"
+                  ><img src="../images/deviceIcon.svg" alt="세이프 포켓"
+                /></span>
+                <span class="nav-item-label">세이프 포켓</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-item" href="#" id="smartPhone">
+                <span class="nav-item-icon"
+                  ><img src="../images/userIcon.svg" alt="단말기"
+                /></span>
+                <span class="nav-item-label">단말기</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- ─── MAIN ─── -->
+      <main class="main">
+        <!-- HEADER -->
+        <header class="header_container">
+          <div class="user_container" id = "user_info">
+            <!-- 이미지 박스-->
+            <div class ="header_img_box">
+              <img src="../images/loginUserIcon.svg">
+            </div>
+
+            <div>User</div>
+            <!-- 드롭다운 -->
+            <div class="logout_dropdown" id="logoutDropdown">
+              <button>로그아웃</button>
+            </div>
+        </div>
+        </header>
+
+        <!-- LIST -->
+        <div class="list-container">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>등록일</th>
+                  <th>사번</th>
+                  <th>스마트폰 UID</th>
+                  <th>장치명</th>
+                  <th>위치정보</th>
+                  <th>상태</th>
+                </tr>
+              </thead>
+              <tbody id="list_tbody">
+                <tr>
+                  <td>1</td>
+                  <td>2025-05-18</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge start"
+                      >스마트폰 통신 차단 시작</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2025-05-18</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2025-05-17</td>
+                  <td>7654321</td>
+                  <td>uid_def456abc</td>
+                  <td>세이프포켓-002</td>
+                  <td>용산역 2번 승강장</td>
+                  <td>
+                    <span class="status_badge start"
+                      >스마트폰 통신 차단 시작</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>2025-05-17</td>
+                  <td>7654321</td>
+                  <td>uid_def456abc</td>
+                  <td>세이프포켓-002</td>
+                  <td>용산역 2번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>6</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge start"
+                      >스마트폰 통신 차단 시작</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                                <tr>
+                  <td>7</td>
+                  <td>2025-05-16</td>
+                  <td>1234567</td>
+                  <td>uid_abc123xyz</td>
+                  <td>세이프포켓-001</td>
+                  <td>서울역 1번 승강장</td>
+                  <td>
+                    <span class="status_badge end"
+                      >스마트폰 통신 차단 종료</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
