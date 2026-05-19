@@ -202,7 +202,7 @@ body {
   height: 100vh;
   background: #efefef;
   border-radius: 40px 0 0 40px;
-  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.45);
+  box-shadow: -8px 0 20px rgba(0, 0, 0, 0.50);
   display: flex;
   flex-direction: column;
   overflow: hidden;
