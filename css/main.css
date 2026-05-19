@@ -60,7 +60,7 @@ body {
   overflow: hidden;
 }
 .sidebar {
-  width: 200px;
+  width: 186px;
   height: 100vh;
   background: linear-gradient(180deg, #517fb1 0%, #0a2b5e 100%);
   display: flex;
