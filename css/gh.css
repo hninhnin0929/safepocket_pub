@@ -25,7 +25,7 @@ body{
     height: 25px;
     display: flex;
     align-items: center;
-    transform: translateX(-13px);
+    transform: translateX(-12px);
 }
 
 .sidebar-logo img {
@@ -53,7 +53,7 @@ body{
     padding: 0 10px;
     text-decoration: none;
     color: #dde3eb;
-    transform: translateX(-13px);
+    transform: translateX(-12px);
 }
 
 .nav-item-icon {
@@ -62,11 +62,6 @@ body{
     justify-content: center;
    
 }
-.nav-item-icon img{
-    width: 20px;
-    height: 20px;
-}
-
 .nav-item-label {
     margin-top: 11px;
     font-size: 18px;
