@@ -18,21 +18,21 @@
         <nav aria-label="메인 메뉴">
           <ul class="nav-list">
             <li>
-              <a class="nav-item" href="#">
+              <a class="nav-item" href="#" id = "hist_info">
                 <img src="../images/hist.svg" alt="계폐이력">
                 <span class="nav-item-label">계폐 이력</span>
               </a>
             </li>
             
             <li>
-              <a class="nav-item " href="#">
+              <a class="nav-item " href="#" id = "safePocket">
                 <img src="../images/fclt.svg" alt="세이프 포켓">
                 <span class="nav-item-label">세이프 포켓</span>
               </a>
             </li>
             
             <li>
-              <a class="nav-item " href="#">
+              <a class="nav-item " href="#" id = "smartPhone">
                 <img src="../images/user.svg" alt="단말기">
                 <span class="nav-item-label">단말기</span>
               </a>
@@ -70,19 +70,27 @@
         dropdown.style.display = "none";
     });
 
-    const navItems = document.querySelectorAll(".nav-item");
-    navItems.forEach(item => {
-        item.addEventListener("click", function(e){
-            e.preventDefault();
+const navItems = document.querySelectorAll(".nav-item");
 
-            // 기존 active 제거
-            navItems.forEach(nav => {
-                nav.classList.remove("active");
-            });
+let currentMenuId = "";
 
-            // 현재 클릭한 메뉴 active 추가
-            this.classList.add("active");
+navItems.forEach(item => {
+    item.addEventListener("click", function(e){
+        e.preventDefault();
+
+        // 클릭한 메뉴 id 저장
+        currentMenuId = this.id;
+
+        console.log("현재 클릭 메뉴:", currentMenuId);
+
+        // 기존 active 제거
+        navItems.forEach(nav => {
+            nav.classList.remove("active");
         });
+
+        // 클릭한 메뉴 active 추가
+        this.classList.add("active");
+    });
     });
 </script>
 
